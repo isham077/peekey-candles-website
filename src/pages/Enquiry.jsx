@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 export default function Enquiry() {
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     company: '',
@@ -12,24 +13,50 @@ export default function Enquiry() {
     message: ''
   });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // In the future, the user will link this to Google Forms.
-    // For now, we simulate the submission.
-    console.log("Enquiry form data:", formData);
-    setSubmitted(true);
-    setFormData({
-      name: '',
-      company: '',
-      phone: '',
-      email: '',
-      product: '',
-      quantity: '',
-      message: ''
-    });
+    setIsSubmitting(true);
     
-    // Smooth scroll to top of form to see success message
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // Google Form mapping
+    const formUrl = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdQRsOd1n_JbBLi3qX3b1WwWzNc0WiugNbnBzX0RtLixQCywg/formResponse";
+    
+    const formParams = new URLSearchParams();
+    formParams.append("entry.285630555", formData.name);
+    formParams.append("entry.401298784", formData.company);
+    formParams.append("entry.150892426", formData.phone);
+    formParams.append("entry.696364966", formData.email);
+    formParams.append("entry.1564650426", formData.product);
+    formParams.append("entry.1381149933", formData.quantity);
+    formParams.append("entry.1042044713", formData.message);
+
+    try {
+      // mode: 'no-cors' is essential when submitting to Google Forms directly from frontend
+      await fetch(formUrl, {
+        method: "POST",
+        mode: "no-cors",
+        body: formParams
+      });
+
+      // Show success message
+      setSubmitted(true);
+      setFormData({
+        name: '',
+        company: '',
+        phone: '',
+        email: '',
+        product: '',
+        quantity: '',
+        message: ''
+      });
+      
+      // Smooth scroll to top of form to see success message
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } catch (error) {
+      console.error("Submission error:", error);
+      alert("There was an error submitting your enquiry. Please try again or contact us via WhatsApp.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e) => {
@@ -174,9 +201,13 @@ export default function Enquiry() {
                     </div>
 
                     <div className="pt-8">
-                      <button className="w-full md:w-auto bg-primary text-white px-16 py-6 font-label uppercase text-xs tracking-[0.2em] flex items-center justify-center gap-4 hover:bg-primary/90 transition-all group font-bold" type="submit">
-                          Send Enquiry
-                          <span className="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                      <button 
+                        className="w-full md:w-auto bg-primary text-white px-16 py-6 font-label uppercase text-xs tracking-[0.2em] flex items-center justify-center gap-4 hover:bg-primary/90 transition-all group font-bold disabled:opacity-70 disabled:cursor-not-allowed" 
+                        type="submit"
+                        disabled={isSubmitting}
+                      >
+                          {isSubmitting ? 'Sending Enquiry...' : 'Send Enquiry'}
+                          {!isSubmitting && <span className="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>}
                       </button>
                     </div>
                   </form>
