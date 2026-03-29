@@ -1,16 +1,54 @@
-# React + Vite
+# Pee Key Candle Works And Trading Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium business website designed to showcase our candle manufacturing capabilities, product range, and bulk supply services.
 
-Currently, two official plugins are available:
+## 🚀 Overview
+This website is built to represent our brand digitally and attract bulk buyers, distributors, and business clients.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+It focuses on:
+- Clean premium UI/UX
+- Industrial manufacturing showcase
+- Product catalog display
+- Bulk enquiry system
 
-## React Compiler
+## 🏭 Business Focus
+Pee Key Candle Works And Trading is a candle manufacturing business based in Kerala, India, specializing in:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Household candles
+- Tealight candles
+- Bulk supply for businesses
+- Upcoming premium candle ranges
 
-## Expanding the ESLint configuration
+## 🧩 Features
+- Premium landing page design
+- Product catalog (Available + Upcoming)
+- Bulk enquiry form (Google Forms integration ready)
+- Mobile-first responsive design
+- WhatsApp quick contact integration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+- React
+- Vite
+- Tailwind CSS
+
+## 🌐 Deployment
+- Hosted on Vercel (Frontend-only architecture)
+
+## 📩 Enquiry System
+Customer enquiries are handled using:
+- Google Forms (frontend integration)
+- Google Sheets (data storage)
+
+## 📍 Location
+Wayanad, Kerala, India
+
+## ⚡ Purpose
+This is a **frontend-focused business website**, not a full web app.
+Built to:
+- Establish online presence
+- Generate leads
+- Showcase manufacturing strength
+
+---
+
+> Designed with a focus on premium branding and scalable future expansion.
