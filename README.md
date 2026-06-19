@@ -127,11 +127,6 @@ This project was developed as a real-world business solution for **Pee Key Candl
 
 > **Note:** This is a production website for an active business. Built using AI design tools (Antigravity, Google Stitch) and deployed on Vercel for reliability and performance.
 
-## 📧 Contact
-
-For business enquiries: [Add business email]  
-WhatsApp: [Add business WhatsApp number]
-
 ---
 
 **Built with ❤️ using AI-powered design tools and modern web technologies**
