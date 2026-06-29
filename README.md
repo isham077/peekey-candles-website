@@ -121,7 +121,7 @@ peekey-candles/
 
 ## 🤝 Built For
 
-This project was developed as a real-world business solution for **Pee Key Candle Works And Trading**, combining AI-assisted design tools with modern web technologies to deliver a professional online presence.
+This project was built for **Pee Key Candle Works And Trading** as a custom business solution to strengthen its online presence. Leveraging AI-assisted design and modern web technologies, the website provides a responsive, professional, and engaging experience that highlights the company's products and reflects its brand.
 
 ---
 
