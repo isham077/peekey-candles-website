@@ -52,10 +52,10 @@ Modern business website built using **Antigravity AI** and **Google Stitch** for
 
 ## 🏗️ Development Workflow
 
-1. **Design Phase:** Created initial layouts using Antigravity AI
-2. **Component Assembly:** Used Google Stitch for UI composition
-3. **Customization:** Refined with React + Tailwind CSS
-4. **Deployment:** Continuous deployment via Vercel
+1. **Design & Prototyping:** Created the initial layouts and design concepts using Antigravity AI.
+2. **UI Assembly:** Composed and structured the interface using Google Stitch.
+3. **Development & Customization:** Refined the UI and implemented custom functionality with React and Tailwind CSS.
+4. **Deployment:** Set up continuous deployment through Vercel for seamless updates and releases.
 
 ## 🌐 Architecture
 
