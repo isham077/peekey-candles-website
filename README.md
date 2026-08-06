@@ -1,132 +1,401 @@
 # Pee Key Candle Works And Trading Website
 
-A premium business website for a candle manufacturing company in Wayanad, Kerala, designed to showcase products and attract bulk buyers.
+A production-ready business website for **Pee Key Candle Works And Trading**, a candle manufacturer based in Wayanad, Kerala, India.
 
-## 🚀 Overview
-
-Modern business website built using **Antigravity AI** and **Google Stitch** for rapid prototyping and design, deployed on Vercel for fast global delivery.
-
-**Purpose:**
-- Establish professional online presence
-- Showcase manufacturing capabilities
-- Generate B2B leads and bulk enquiries
-- Display product catalog and company information
-
-## 📸 Screenshots
-
-![Homepage](./screenshots/home.png)
-![Products](./screenshots/products.png)
-
-## 🏭 About the Business
-
-**Pee Key Candle Works And Trading** is a candle manufacturing business based in Wayanad, Kerala, India.
-
-**Product Range:**
-- Household candles
-- Tealight candles
-- Bulk supply for distributors and businesses
-- Upcoming premium candle collections
-
-## ✨ Key Features
-
-- 🎨 Premium black & gold aesthetic
-- 📱 Mobile-first responsive design
-- 🛒 Product catalog (Available + Upcoming ranges)
-- 📋 Bulk enquiry form with Google Forms integration
-- 💬 WhatsApp quick contact integration
-- ⚡ Fast loading with optimized performance
-
-## 🛠️ Tech Stack & Tools
-
-**Design & Development:**
-- **Antigravity AI** - AI-powered web design generation
-- **Google Stitch** - Component assembly and layout design
-- **React** - Frontend framework
-- **Vite** - Build tool and dev server
-- **Tailwind CSS** - Utility-first styling
-
-**Deployment & Hosting:**
-- **Vercel** - Production deployment and hosting
-- **Google Forms** - Enquiry data collection
-- **Google Sheets** - Lead management backend
-
-## 🏗️ Development Workflow
-
-1. **Design & Prototyping:** Created the initial layouts and design concepts using Antigravity AI.
-2. **UI Assembly:** Composed and structured the interface using Google Stitch.
-3. **Development & Customization:** Refined the UI and implemented custom functionality with React and Tailwind CSS.
-4. **Deployment:** Set up continuous deployment through Vercel for seamless updates and releases.
-
-## 🌐 Architecture
-
-**Frontend-Only Architecture:**
-```
-User Browser
-↓
-Vercel (Static Hosting)
-↓
-React App (Vite Build)
-↓
-Google Forms (Enquiries) → Google Sheets (Data Storage)
-```
-
-**No backend server required** - leverages Google ecosystem for data handling.
-
-## 📩 Enquiry System
-
-**Lead Collection Flow:**
-1. Customer fills bulk enquiry form on website
-2. Data submitted to Google Forms (embedded)
-3. Responses automatically logged in Google Sheets
-4. Business owner receives email notifications
-5. WhatsApp quick contact available for instant queries
-
-## 🚀 Live Demo
-
-🔗 **Website:** [www.peekeycandles.in](https://www.peekeycandles.in/)
-
-## 📂 Project Structure
-
-```
-peekey-candles/
-├── src/
-│   ├── components/     # React components
-│   ├── assets/         # Images, icons
-│   └── App.jsx         # Main app component
-├── public/             # Static files
-├── screenshots/        # README screenshots
-├── index.html          # Entry HTML
-└── package.json        # Dependencies
-```
-
-## 🎯 Target Audience
-
-- Bulk buyers and distributors
-- Event organizers
-- Religious institutions
-- Retail businesses
-- Corporate clients
-
-## 📍 Location
-
-**Wayanad, Kerala, India**
-
-## 🔮 Future Enhancements
-
-- [ ] Add ERP system integration (Bolt.new planned)
-- [ ] Implement product filtering and search
-- [ ] Add customer testimonials section
-- [ ] Integrate payment gateway for online orders
-- [ ] Multilingual support (English + Malayalam)
-
-## 🤝 Built For
-
-This project was developed for Pee Key Candle Works And Trading to enhance its digital presence with a modern, custom-built website. Using AI-assisted design alongside contemporary web technologies, the site delivers a responsive, professional, and engaging user experience while effectively showcasing the company's products and reinforcing its brand identity.
+Built as a modern frontend application with AI-assisted UI generation, deployed on **Vercel**, accelerated and secured by **Cloudflare**, and configured with a custom business domain and email infrastructure.
 
 ---
 
-> **Note:** This is a production website for an active business. Built using AI design tools (Antigravity, Google Stitch) and deployed on Vercel for reliability and performance.
+## 🌐 Live Website
+
+**Production**
+https://peekeycandles.in
 
 ---
 
-**Built with ❤️ using AI-powered design tools and modern web technologies**
+# Project Overview
+
+This project was developed to establish a professional online presence for a candle manufacturing business while following modern frontend deployment and DevOps practices.
+
+The website is designed to:
+
+- Showcase the company's product range
+- Generate wholesale and B2B enquiries
+- Build brand credibility
+- Improve search engine discoverability
+- Provide fast global content delivery
+- Maintain enterprise-level security with minimal infrastructure
+
+---
+
+# Architecture
+
+```
+                    User
+                      │
+                      ▼
+              Cloudflare CDN
+       (SSL, DNS, Security, Cache)
+                      │
+                      ▼
+            Vercel Edge Network
+                      │
+                      ▼
+              React + Vite App
+                      │
+        ┌─────────────┴─────────────┐
+        ▼                           ▼
+ Google Forms                WhatsApp API
+        │
+        ▼
+ Google Sheets
+        │
+        ▼
+ Business Lead Management
+```
+
+Frontend-only architecture.
+
+No custom backend server required.
+
+---
+
+# Tech Stack
+
+## Frontend
+
+- React
+- Vite
+- Tailwind CSS
+- JavaScript (ES6+)
+
+---
+
+## AI Assisted Development
+
+- Antigravity AI
+- Google Stitch
+
+Used for:
+
+- Initial UI generation
+- Layout prototyping
+- Component generation
+- Design refinement
+
+---
+
+## Hosting
+
+- Vercel
+
+Features:
+
+- Edge deployment
+- Automatic CI/CD
+- HTTPS
+- Preview deployments
+- Global CDN
+
+---
+
+## Networking & Infrastructure
+
+### Cloudflare
+
+Configured as the DNS provider and security layer.
+
+Implemented:
+
+- DNS Management
+- Global CDN
+- Universal SSL Certificate
+- TLS 1.3
+- HTTP/2
+- HTTP/3
+- Automatic HTTPS Rewrites
+- Browser Integrity Check
+- Email Routing
+- DDoS Protection
+- Managed Security Rules
+- Schema Validation
+- JavaScript Library Protection
+- Security Headers
+- Intelligent Proxying
+
+---
+
+## Domain
+
+Domain Registrar:
+
+GoDaddy
+
+Production Domain
+
+https://peekeycandles.in
+
+DNS Management
+
+Cloudflare
+
+---
+
+# Business Email Infrastructure
+
+Configured using:
+
+Cloudflare Email Routing
+
+Professional business email:
+
+```
+info@peekeycandles.in
+```
+
+Current Routing
+
+```
+info@peekeycandles.in
+            │
+            ▼
+Cloudflare Email Routing
+            │
+            ▼
+Business Gmail Inbox
+```
+
+Advantages
+
+- Custom business email
+- Zero monthly cost
+- Future migration ready
+- Professional communication
+
+---
+
+# Security Configuration
+
+Implemented
+
+- Universal SSL
+- HTTPS
+- TLS 1.3
+- HTTP/2
+- HTTP/3
+- Browser Integrity Check
+- Automatic HTTPS Rewrite
+- Cloudflare Managed Rules
+- Layer 3/4 DDoS Protection
+- HTTP DDoS Protection
+- SSL DDoS Protection
+- Email Obfuscation
+- AI Bot Policy Configuration
+
+---
+
+# Performance Optimization
+
+Configured
+
+- Cloudflare CDN
+- Static asset caching
+- Edge delivery
+- Compression
+- Browser caching
+- Global network routing
+
+---
+
+# Lead Generation System
+
+Customer Flow
+
+```
+Website
+
+↓
+
+Bulk Enquiry Form
+
+↓
+
+Google Forms
+
+↓
+
+Google Sheets
+
+↓
+
+Business Owner
+```
+
+Instant Contact
+
+- WhatsApp Integration
+
+---
+
+# Google Business Profile
+
+Configured
+
+- Business Profile
+- Business Description
+- Website
+- Phone Number
+- Service Areas
+
+Verification
+
+Pending Google Review
+
+---
+
+# Project Structure
+
+```
+peekey-candles
+│
+├── public
+├── src
+│   ├── assets
+│   ├── components
+│   ├── pages
+│   ├── hooks
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── screenshots
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+---
+
+# Development Workflow
+
+```
+Requirement Analysis
+
+↓
+
+UI Design (AI)
+
+↓
+
+Component Assembly
+
+↓
+
+React Development
+
+↓
+
+Testing
+
+↓
+
+GitHub
+
+↓
+
+Vercel Deployment
+
+↓
+
+Domain Configuration
+
+↓
+
+Cloudflare Integration
+
+↓
+
+SSL Configuration
+
+↓
+
+Email Infrastructure
+
+↓
+
+Google Business Profile
+
+↓
+
+Production
+```
+
+---
+
+# Features
+
+- Responsive Design
+- Mobile First
+- Product Catalogue
+- Upcoming Products
+- Wholesale Enquiry
+- WhatsApp Contact
+- Fast Loading
+- Professional Branding
+- Secure HTTPS
+- CDN Accelerated
+- Business Email
+- SEO Ready
+
+---
+
+# Future Roadmap
+
+## Business
+
+- Google Search Console
+- Google Analytics
+- Bing Webmaster
+- Product Schema
+- Local SEO
+- Review Management
+
+---
+
+## Technical
+
+- ERP Integration
+- Admin Dashboard
+- Inventory Management
+- Authentication
+- Product Search
+- Shopping Cart
+- Payment Gateway
+- Order Tracking
+- API Backend
+- Docker Deployment
+
+---
+
+# Repository Purpose
+
+This repository demonstrates the development of a production-ready business website using modern frontend technologies, AI-assisted design tools, CDN architecture, managed DNS, secure SSL infrastructure, and serverless deployment practices.
+
+The project emphasizes practical web engineering and deployment rather than traditional backend development.
+
+---
+
+# Author
+
+Developed for
+
+**Pee Key Candle Works And Trading**
+
+Wayanad, Kerala, India
+
+---
+
+# License
+
+This repository contains the production source code of the official Pee Key Candle Works And Trading website.
+
+Unauthorized commercial reuse is prohibited.
