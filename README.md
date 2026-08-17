@@ -15,7 +15,8 @@ https://peekeycandles.in
 
 # Project Overview
 
-This project was developed to establish a professional online presence for a candle manufacturing business while following modern frontend deployment and DevOps practices.
+This project was developed to establish a professional online presence for a candle manufacturing business while leveraging modern frontend development, deployment, and DevOps practices.
+
 
 The website is designed to:
 
